@@ -1,0 +1,414 @@
+Archive member included because of file (symbol)
+
+C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a(_udivmodhi4.o)
+                              C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o (__udivmodhi4)
+C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a(_divmodhi4.o)
+                              C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o (__divmodhi4)
+C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a(_udivmodsi4.o)
+                              C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a (__udivmodsi4)
+C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a(_divmodsi4.o)
+                              C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a (__divmodsi4)
+C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a(_copy_data.o)
+                              C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o (__do_copy_data)
+C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a(_clear_bss.o)
+                              C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o (__do_clear_bss)
+C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5\libc.a(malloc.o)
+                              C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a (malloc)
+
+Allocating common symbols
+Common symbol       size              file
+
+lcd_buf             0x50              C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+SDA_DDR             0x1               C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+I2C_SPEED           0x1               C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+SCL_PIN             0x1               C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+End                 0x2               C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+__brkval            0x2               C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5\libc.a(malloc.o)
+SCL_BIT             0x1               C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+SDA_BIT             0x1               C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+SCL_PORT            0x1               C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+Mid                 0x2               C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+SDA_PIN             0x1               C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+timer1_freq_counter
+                    0x2               C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+timer1_bit          0x1               C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+SDA_PORT            0x1               C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+Begin               0x2               C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+SCL_DDR             0x1               C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+pCurStruct          0x2               C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+__flp               0x2               C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5\libc.a(malloc.o)
+timer1_port         0x1               C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+Start               0x7               C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+pic_iic             0x1               C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5/crtm32.o
+LOAD C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+LOAD C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5\libm.a
+LOAD C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+LOAD C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a
+LOAD C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5\libc.a
+LOAD C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x2b8a
+ *(.vectors)
+ .vectors       0x00000000       0x54 C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+ *(.init0)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init5)
+ *(.init6)
+ *(.init7)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x4 C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5/crtm32.o
+ *(.text)
+ .text          0x0000008a        0x4 C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008a                __vector_1
+                0x0000008a                __vector_12
+                0x0000008a                __bad_interrupt
+                0x0000008a                __vector_6
+                0x0000008a                __vector_3
+                0x0000008a                __vector_13
+                0x0000008a                __vector_17
+                0x0000008a                __vector_19
+                0x0000008a                __vector_7
+                0x0000008a                __vector_5
+                0x0000008a                __vector_4
+                0x0000008a                __vector_2
+                0x0000008a                __vector_15
+                0x0000008a                __vector_8
+                0x0000008a                __vector_14
+                0x0000008a                __vector_10
+                0x0000008a                __vector_16
+                0x0000008a                __vector_18
+                0x0000008a                __vector_20
+ .text          0x0000008e     0x1a4e C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+                0x00000258                Soft_I2C_Start
+                0x000001fa                SetLCDBack
+                0x00000f84                dynEyeRead
+                0x00000776                Soft_I2C_ReadSlaver
+                0x00000400                Soft_I2C_Write
+                0x000005b0                Soft_I2C_Read
+                0x00000c6e                set_lcdcom1
+                0x00000fca                state
+                0x0000034e                Soft_I2C_Stop
+                0x0000023a                Soft_I2C_Delayxd
+                0x00000c82                set_lcdcom0
+                0x00000c66                lcd_delay
+                0x00000a24                GetCompoI3
+                0x00000cfa                lcdwrdata
+                0x00000ea0                SetLCD3Char
+                0x0000008e                Wait
+                0x00000c96                set_lcddata
+                0x00000d90                dis1char
+                0x000000b6                SetMotor
+                0x0000100c                main
+                0x00000208                Soft_I2C_Delay
+                0x00000d72                lcd_int
+                0x00001000                min
+                0x00000b94                GetTentacle
+                0x00000fea                cap
+                0x00000cbe                lcdwrcom
+                0x00000fdc                absl
+ .text          0x00001adc      0xdc4 C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+                0x00002474                uartinit
+                0x00002416                timer2_pwm
+                0x00002746                delayms
+                0x00001ba4                SortChain
+                0x00002274                timer1_init
+                0x00002204                getsystemtime
+                0x0000252c                uartsend
+                0x00001e5e                __vector_11
+                0x0000222a                setsystemtime
+                0x000026ba                ReadSystemEeprom
+                0x0000258c                uartreceive
+                0x00002654                WriteSystemEeprom
+                0x00001e1c                timer0_init
+                0x000025ca                GetAdcResult
+                0x00002352                __vector_9
+                0x00002860                i2c_init
+                0x00002714                shortdelay
+                0x0000233c                timer1_stop
+                0x00001b1c                SearchNote
+                0x00001adc                ChainInit
+                0x00001c92                AddNote
+ .text          0x000028a0      0x222 C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x000028a0                malloc
+                0x000029fe                free
+                0x00002ac2                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00002ac2       0x28 C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00002ac2                __udivmodhi4
+ .text.libgcc   0x00002aea       0x26 C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a(_divmodhi4.o)
+                0x00002aea                __divmodhi4
+                0x00002aea                _div
+ .text.libgcc   0x00002b10       0x44 C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00002b10                __udivmodsi4
+ .text.libgcc   0x00002b54       0x36 C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/avr5\libgcc.a(_divmodsi4.o)
+                0x00002b54                __divmodsi4
+                0x00002b8a                . = ALIGN (0x2)
+ *(.fini9)
+ *(.fini8)
+ *(.fini7)
+ *(.fini6)
+ *(.fini5)
+ *(.fini4)
+ *(.fini3)
+ *(.fini2)
+ *(.fini1)
+ *(.fini0)
+                0x00002b8a                _etext = .
+
+.data           0x00800060      0x2d0 load address 0x00002b8a
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060      0x2bf C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+                0x00800240                portarray
+                0x00800060                CHARLCDLIB
+ .data          0x0080031f        0xa C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+                0x0080031f                timer0_counter
+ .data          0x00800329        0x6 C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x0080032b                __malloc_heap_start
+                0x00800329                __malloc_heap_end
+                0x0080032d                __malloc_margin
+ *(.gnu.linkonce.d*)
+                0x00800330                . = ALIGN (0x2)
+ *fill*         0x0080032f        0x1 00
+                0x00800330                _edata = .
+                0x00800330                PROVIDE (__data_end, .)
+
+.bss            0x00800330       0x7f
+                0x00800330                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800330        0xe C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+                0x0080033b                timer1_flag
+                0x00800330                trainflag
+                0x00800332                timer0_startflag
+                0x0080033c                uartflag
+                0x0080033d                uartbaud
+                0x00800338                shut_assistant
+                0x00800331                struct_depth
+                0x0080033a                timer1_start_flag
+                0x00800334                system_time
+ *(COMMON)
+ COMMON         0x0080033e       0x5a C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.o
+                                  0x0 (size before relaxing)
+                0x0080033e                lcd_buf
+                0x0080038e                SDA_DDR
+                0x0080038f                I2C_SPEED
+                0x00800390                SCL_PIN
+                0x00800391                SCL_BIT
+                0x00800392                SDA_BIT
+                0x00800393                SCL_PORT
+                0x00800394                SDA_PIN
+                0x00800395                SDA_PORT
+                0x00800396                SCL_DDR
+                0x00800397                pic_iic
+ COMMON         0x00800398       0x13 C:\RoboEXP\v3.7\Robots\XRCU\Include\libjmkernel.a
+                                  0x0 (size before relaxing)
+                0x00800398                End
+                0x0080039a                Mid
+                0x0080039c                timer1_freq_counter
+                0x0080039e                timer1_bit
+                0x0080039f                Begin
+                0x008003a1                pCurStruct
+                0x008003a3                timer1_port
+                0x008003a4                Start
+ COMMON         0x008003ab        0x4 C:/RoboEXP/v3.7/Compiler/../avr-gcc/bin/../lib/gcc/avr/3.4.3/../../../../avr/lib/avr5\libc.a(malloc.o)
+                                  0x0 (size before relaxing)
+                0x008003ab                __brkval
+                0x008003ad                __flp
+                0x008003af                PROVIDE (__bss_end, .)
+                0x00002b8a                __data_load_start = LOADADDR (.data)
+                0x00002e5a                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008003af        0x0
+                0x008003af                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008003af                PROVIDE (__noinit_end, .)
+                0x008003af                _end = .
+                0x008003af                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(C:\Users\Chang Si Yuan\Desktop 6\RCP\RCP 15\sySv10\sySv10.elf elf32-avr)

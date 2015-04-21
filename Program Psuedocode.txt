@@ -1,0 +1,409 @@
+Variables:
+
+	ul
+		ulX			char	s	left ultrasound Sensor
+		ulY			char	s	back ultrasound Sensor
+		ulZ			char	s	right ultrasound Sensor
+		ulH			bool	d	if full horizontal distance detected (ulX + ulZ > ulT)
+		ulT			char	c	left-right treshold of ulH
+		hmX			char	c	home position X coordinate (may be relative)
+		hmY			char	c	home position Y coordinate
+	eye
+		eyeFP		char	s	front compound eye power
+		eyeFD		char	s	front compound eye direction
+		eyeBP		char	s	back compound eye power
+		eyeBD		char	s	back compound eye direction
+		eyePP		int		d	compound eye highest power and eventually highest 3 powers
+		eyeDR		int		d	compound eye total direction (0 to 27, clockwise starting from slightly above west)
+		eyeCP		char	s	compound eye power of clockport
+		eyeAP		char	s	compound eye power of anticlockport
+		eyeSP		int		d	compound eye power of score zone (3 + 4 + 5 of front)
+		eyeCH		char	c	treshold of eyePP to begin ball tracking
+		eyeSA		char	c	treshold of eyePP to begin strafing
+		eyeSB
+		eyeSC
+		eyeSK		int		c	treshold of eyeSP to begin scoring
+	cmp
+		cmpR		int		s	compass reading
+		cmpO		int		d	compass offset to be added to cmpR, positive turns bot anticlockwise, negative clockwise
+		cmpM		int		c	compass offset multiplier
+	motor
+		traS		char	d	translation speed
+		traD		int		d	translation direction (0 to 23, clockwise starting from north)
+		traBC		int		c	translation border control limit
+		rotS		char 	d	rotation speed
+		rotD		int		d	rotation direction (0 moves clockwise, 1 anticlockwise)
+		mtrM		int		d	multiplier of traS for border control
+		mtrC		char	d	cap of movement speed, used to scale down motorAbs
+		mtrP[4]		int		d	motor raw power (NE,NW,SE,SW)
+		mtrA[4]		int		d	motor abs power (0 to 100)
+		mtrD[4]		int		d	motor direction (0 is forward)
+	aiming
+		strX		char	d	xcord for aiming:	cap((ulX-30)/40,2) or cap((ulZ-30)/40,2)
+		strY		char	d	ycord for aiming:	cap(ulY/40,4)
+	extra constants
+		run			bool	s	tentacle press to activate robot
+		aim			char	c	striking aiming direction
+			input: 	strX and strY cord
+			output:	offset value into cmpO
+			value:	{0,1,1,2,3,0,0,0,1,2,0}
+		mtrI[30]	int		c	index which converts translational direction to motor speed states
+			input:	0 to 29 from [traD+6] for NESW, [traD] for NWSE
+			output:	0 to 6 into mtrS[]
+			value:	int motorIndex[30] = {0,0,0,0,0,0,0,1,2,3,4,5,6,6,6,6,6,6,6,5,4,3,2,1,0,0,0,0,0,0}
+		mtrS[7]		int		c	scaling which converts motor speed state to raw power 
+			input:	0 to 6 mtrI[]
+			output:	-100 to 100 into mtrP
+			value:	int motorScale[7] = {100,58,27,0,-27,-58,-100}
+		chase		int		c	index which converts ball direction to translational direction when chasing ball
+			input: 	0 to 27 from eyeDR
+			output:	0 to 23 into traD
+			value: 	int Chase[28] = {18,19,20,20,21,22,23,0,1,2,2,3,4,5,6,7,8,8,9,10,11,12,13,14,14,15,16,17}
+		strafe		int		c	index which converts ball direction to translational direction when strafing around ball
+			input: 	0 to 27 from eyeDR
+			output:	0 to 23 into traD
+			value:int Strafe[28] = {13,15,17,19,21,23,0,0,1,3,5,7,9,11,12,13,14,15,16,17,18,6,7,8,9,10,11,12}
+		experimental
+			experimental aim - aggressive aim
+			{1,1,2,3,3,0,0,1,2,3,0}
+			experimental strafe - bot chasing from left
+			{12,14,16,18,20,23,0,0,1,3,6,8,10,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12}
+			experimental strafe - bot chasing from left v2
+			{12,14,16,18,20,23,0,0,1,3,6,8,10,12,12,12,12,11,11,11,11,11,11,11,11,12,12,12}
+			experimental strafe - bot chasing from left v3
+			{12,14,16,18,20,23,0,0,1,3,6,8,10,12,12,12,12,11,10,9,8,8,9,10,11,12,12,12}
+			experimental chase - focus on rear control
+			{12,14,16,18,20,23,0,0,1,3,6,8,10,12,12,12,12,11,11,10,10,14,14,13,13,12,12,12}
+			experimental strafe - sharper turn
+			{12,14,16,18,20,22,0,0,2,4,6,8,10,12,13,14,15,16,17,18,18,6,6,7,8,9,10,11}
+			experimental strafe - focus on rear control
+			{12,12,14,16,18,21,23,1,3,6,8,10,12,12,12,12,18,18,18,18,18,6,6,6,6,6,12,12}
+			experimental strafe - bot strafing from left
+			{12,12,14,16,18,21,23,1,3,6,8,10,12,12,12,12,3,3,5,6,6,6,6,7,9,9,12,12}
+	predefined constants
+		ulT
+		hmX
+		hmY
+		eyeCH
+		eyeSA
+		eyeSK
+		cmpM
+		traBC
+
+Subroutines:
+
+	dynEyeRead		reads compound eye according to total direction
+		input:	compound eye port 0 to 15, front port 1 to 7 is 1 to 7, back port 1 to 7 is 8 to 14. 0 is back port 7, 15 is front port 1. from eyeDR
+		output:	value of said compound eye port
+		code:
+			int dynEyeRead(int port){
+				if((port>0&&port<8)||port==15){
+					if(port==15) port = 1;
+					return GetCompoI3(_COMPOUNDEYE3_F_, port);
+				} else {
+					if(port == 0) port = 14;
+					port -= 7;
+					return GetCompoI3(_COMPOUNDEYE3_B_, port);
+				}
+			}
+	state			reads motor power and returns movement direction
+		input: 	-100 to 100 from mtrP[x]
+		output:	0 for positive and 2 for negative into mtrD[x]
+		code:
+			int state(int a){
+				if(a>0){
+					return 0;
+				} else {
+					return 2;
+				}	
+			}
+	absl 			reads motor power and returns absolute power
+		input: 	-100 to 100 from mtrP[x]
+		output:	0 to 100 into mtrD[x]
+		code:
+			int absl(int a){
+				if(a>0){
+					return a;
+				} else {
+					return -a;
+				}	
+			}
+	cap				reads variable and caps it at given value
+		input: value and max of value
+		output value capped at max of value
+		code:
+			int cap(int value,int upperbnd){
+				if(value>upperbnd){
+					return upperbnd;
+				} else {
+					return value;
+				}
+			}
+
+Psuedocode:
+
+	begin run
+	set all motors to 0 power
+	define variables
+	define array constants
+	define predifined constants
+	begin program loop:
+		reset variables:
+			reset traS, traD, rotS, rotD, mtrP[4], mtrM, eyeDR
+			decay compO
+		read sensors:
+			compass into cmpR
+			ultrasound into ulX ulY and ulZ
+			determine ulH
+			add to ulY if in front of goal
+			eye max power into eyeFP and eyeBP
+		if have not started with tentacle, loop back:
+			eye set to A/C/D pulse mode (14)
+			read tentacle into run
+			goto start of program loop
+		if ball is in play, find direction to ball or score:
+			calculate eyeSP
+			if ball captured, score according to robot position:
+				determine which shell robot is in and move:
+					1st shell where ulY>50 OR robot is centered (ulX&ulZ>45), move straight
+					2nd shell where ulY>100 OR robot is partially centered (ulX&ulZ>30), offset traD by 1  and offset compass by 4;
+					3rd shell for all other cases, offset traD by 2 and offset compass by 8;
+			else capture ball:
+				read eyeFD and eyeBD
+				determine highest eye port power and hence movement power:
+					if eyeFP>eyeBP, eyePP = eyeFP, eyeDR = eyeFD, traS scaled according to eyePP
+					else eyePP = eyeBP, eyeDR = eyeBD + 7, traS at 100
+				fine tune eyeDR:
+					read eyeCP and eyeAP using dynEyeRead
+					add eyeCP and eyeAP to eyePP
+					multiply eyeDR by 2
+					if eyeCP > eyeAP, eyeDR++
+					deduct 2 from eyeDR and loop round if less than 0
+				if ball close closer than strafe treshold, find traD by doing strafe[eyeDR]
+				else chase, find traD by doing chase[eyeDR] and set traS to 100	
+		else align to base:
+			check ulX and ulY
+			determine traD to align to base
+			find traS by adding the absolute values of difference between ulX and hmX, ulY and hmY
+		scale traS to avoid going out of bounds:
+			if ulH is full, scale horizontal:
+				check if bot is at left or right
+				check if bot is moving left or right
+				if both are to one side, mtrM set to 3* ul value
+				cap mtrM and multiply with traS
+			scale vertical:
+				check if bot moving front and too far front
+				if both are true, mtrM set to (maximum of ulY - ulY) * 3
+				cap mtrM and multiply with traS
+		determine compass direction:
+			add cmpO to cmpR
+			find if clock or anticlock
+			determine rotS and rotD
+		compound movement:
+			determine mtrP[] using traS and traP
+			add rotation with rotS and rotP
+			determine mtrA[] and mtrD[]
+			find mtrC
+			bring mtrA[] down to mtrC
+		move
+
+Psuedocode v2:
+	begin run
+	define predefined const variables
+		ultrasound constants
+		compound eye constants
+		movement constants
+		derived constants
+	define constants
+		VD variables
+		VD arrays
+		Aim arrays
+	define sensor variables
+		ultrasound reads
+		ultrasound derived
+		compount eye reads
+		compound eye derived
+		compass
+	define movement variables
+		scoring variables
+		motor power variables
+		calculation variables
+		debug variables
+	begin program loop:
+		startup loop header
+		reset variables
+		read sensors
+			read compass and ultrasound
+			defive ultrasound values
+			read compountd eye
+
+
+
+Version Control
+	sySv5
+		Version control begun
+	sySv6
+		Draft of rp's aog
+		eyePP changed to one bulb
+	sySv7
+		change drive system to 36 degree polar
+			traD ranges between 0 to 360, effective range is 0 to 36
+			nesw = mtrS[mtrI[dir]]
+			nwse = mtrS[mtrI[dir + 9]]
+			mtrI[46] = {0,0,0,0,0,0,0,0,0,0,1,2,3,4,5,6,7,8,9,9,9,9,9,9,9,9,9,9,8,7,6,5,4,3,2,1,0,0,0,0,0,0,0,0,0,0};
+			mtrS[10] = {100,70,47,27,9,-9,-27,-47,-70,-100};
+		add 360 degree to 36 degree function
+			dir = dir/10
+			if (dir==36){
+				dir = 0;
+			}
+	sySv8
+		migrate back to old rear control strategy
+		keep 36 degree polar movement
+		chase[]  = {260,270,280,290,300,320,350,10,30,60,70,80,90,100,100,110,120,130,140,150,170,190,210,220,230,240,250,260};
+		strafe[] = {180,210,240,270,300,330,350,10,30,60,90,120,150,180,180,180,180,140,120,100,90,80,70,60,50,180,180,180}; // rear control left side chase
+		strafe[] = {180,210,240,270,300,330,350,10,30,60,90,120,150,180,180,180,180,140,120,100,90,270,260,240,220,180,180,180}; //rear control default side
+		strafe[] = {180,180,200,230,270,300,350,10,30,90,130,160,180,180,180,180,180,140,120,100,90,270,260,240,220,180,180,180}; //rear control ^2
+		strafe[] = {180,180,210,250,300,330,350,10,30,60,110,150,180,180,180,180,180,140,120,100,90,270,260,240,220,180,180,180}; //rear control ^1.5 BROKEN AOG
+		strafe[] = {180,180,210,250,300,330,350,10,30,60,110,150,180,180,180,180,180,220,240,260,270,90,100,120,140,180,180,180}; //rear control ^1.5 AOG FIXED
+		140,120,100,90,270,260,240,220,
+		chase-strafe scaling
+		eyeSB added
+		d1,d2 and d3(constant) calculation values made
+		base align treshold set
+	sySv8 Archive 6/2/2015
+			int ulT = 220;
+			int hmX = 40;
+			int hmY = 70;
+			char eyeCH = 10;
+			int eyeSA = 60;
+			int eyeSB = 130;
+			int eyeSK = 300;
+			int traBC = 55;
+			char cmpM = 4;
+	sySv8 Checkpoint:
+		movement: 36 directional polar movement, input 36 polar degrees and movement speed
+		base align: 4 directional with speed scaling and cutoff
+		ball chase: compounding between chase and strafe function according to cutoffs
+		ball strike: move with direction offset and compass offset according to Aim[] hash table
+		compass align: move with n power instead of n^2 power
+		border control: scaling towards edge
+		Total 400 Lines w/ comments
+		12300 bytes
+		1000cycles/14.913s
+		Program running at 67 hertz
+	syGv1
+		Port striker 8 to goalie
+			change ulY to new ultrasound
+			lack of button start
+			ul config, diagnostics marked with a g suffix
+			use lcd to time for robot start
+		Striker8 code successfuly ported, finetuning not conducted
+		Begin coding G1 strat
+			Ball far
+				Mirror XZ, anchor to base box
+			Ball 
+	olSv1
+		Port arduino robocup code in
+	sySv9
+		use olSv1 ball directional
+		use modulus
+		change from 0deg centered chase and strafe, 36dir effective ball sensing and 36dir movement
+			Original
+				int chase[28] = {260,270,280,290,300,320,350,10,30,60,70,80,90,100,100,110,120,130,140,150,170,190,210,220,230,240,250,260};
+				int strafe[28] = {170,180,210,250,300,330,350,10,30,60,110,150,180,190,190,190,190,220,240,260,270,90,100,120,140,170,170,170};
+			New
+				int chase[36] = {0,10,20,40,50,70,90,100,110,130,140,140,150,150,160,160,170,170,180,190,190,200,200,210,210,220,220,230,250,260,270,290,310,320,340,350};
+				int strafe[36] = {0,10,30,70,100,130,150,180,190,190,190,190,190,220,230,240,260,270,270,90,100,120,130,140,170,170,170,170,170,180,210,230,260,290,330,350};
+	sySv10
+		cleanup
+	sySv11
+		cleanup finish, all in code blocks
+		dyanmic ball capture power formula done
+			traS = 5 - absl(4-eyeFD);
+			traS = 100 - 10*traS + traS * (145 - eyeFP) / 3;
+		reimplement neil's aog
+	syGv2
+		import cleanup ver into goalie code
+		attempting logic between aog and align
+			d2 = eyeSA - min(eyeDR,360-eyeDR)/2 + cap(ulY*2/3-60,40);
+		add mtrMX max power value
+	sySv12
+		migrate to new ultrasoun for striker
+		new hardware
+		change mtrS
+			char mtrS[10] = {100,80,60,40,20,-20,-40,-60,-80,-100};
+			more angeled movement
+		add rotL default at 25
+		add mtrMX max power vallue
+		incoporate auto-compass calibrate function
+		repurpose chase/strafe
+				int eyeSA = 75;		//begin strafe / begin slowdown 
+				int eyeSB = 120;		//full slowdown
+				int eyeSC = 135;		//AOG factor
+		rea-enable AOG power scaling 
+			according to quadratic
+				d1 = 180 - absl(180-eyeDR);
+				if(d1<80) {
+					d1 = d1*d1/50 - d1*7/6 + 70;
+				} else {
+					d1 = 100;
+				}
+				if(eyePP < eyeSA) {
+					traS = 100;
+				} else if (eyePP < eyeSB) {
+					traS = (100 * (eyeSB - eyePP) + d1 * (eyePP - eyeSA)) / 100;
+				} else {
+					traS = d1;
+				}
+	syGv3
+		migrate from sySv2
+		increase eyeCH
+		decrease eyeSA
+		incoporate auto-compass calibrate function
+	sySv13
+		shift to new handle design
+		fine tuning
+			change chase/strafe speed variables
+				a = 65
+				b = 120
+			change quadratic
+				old quadratic
+					a:1/50 b:7/6 c:80
+					precise
+				new quadratic
+					a:1/21 b:5/2 c:85
+					balanced between speed and precision
+			change aim
+				char aim[11] = {1,2,2,3,4,0,1,1,2,3,0};
+			traBC change
+				55
+		use lcd to ovveride quadratic
+	syGv4
+		finetune IR tresholds
+		attempt vertical BC
+		experimental implementation of LR variable
+			0 for left
+			1 for right
+		new BC
+	sySv14
+		add front ul
+		import LR
+		disable quadratic speed
+	sySv15
+		add ulF
+		shift border control to inside aog
+		add 30/30 scoring
+		revert to XY scoring
+	syGv5
+		shift BC to aog
+		strict BC implement
+	syGv6
+		Rp's goalie track v2
+		shift BC to after all non-striking~~ not anymore
+		tune home values
+	sySv16
+		idek
+		working !finetune of border contorl
+	sySv17
+		try out LR offset AOG

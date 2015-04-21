@@ -1,0 +1,916 @@
+<?xml version="1.0" standalone="no"?>
+<!--RoboExp Hardware Information-->
+<HardwareTable>
+  <SoftwareType>XRCU</SoftwareType>
+  <Description />
+  <HardwareType>
+    <_FAN_>
+      <TypeNickNameDefault>Fan</TypeNickNameDefault>
+      <TypeNickNameCHS>Fan</TypeNickNameCHS>
+      <TypeNickNameCHT>Fan</TypeNickNameCHT>
+      <TypeDesDefault>Fan</TypeDesDefault>
+      <TypeDesCHS>Fan</TypeDesCHS>
+      <TypeDesCHT>Fan</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--fan control line1</PinDesDefault0>
+      <PinDesCHS0>function--fan control line1</PinDesCHS0>
+      <PinDesCHT0>function--fan control line1</PinDesCHT0>
+      <PinDesDefault1>function--fan control line2</PinDesDefault1>
+      <PinDesCHS1>function--fan control line2</PinDesCHS1>
+      <PinDesCHT1>function--fan control line2</PinDesCHT1>
+      <HardwareInstance />
+    </_FAN_>
+    <_IRDISTANCE_>
+      <TypeNickNameDefault>IRDistance</TypeNickNameDefault>
+      <TypeNickNameCHS>IRDistance</TypeNickNameCHS>
+      <TypeNickNameCHT>IRDistance</TypeNickNameCHT>
+      <TypeDesDefault>measuring distance using IR</TypeDesDefault>
+      <TypeDesCHS>measuring distance using IR</TypeDesCHS>
+      <TypeDesCHT>measuring distance using IR</TypeDesCHT>
+      <CtrlLimit>0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,20 ,21 ,22 ,23 </CtrlLimit>
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--distance measuring</PinDesDefault0>
+      <PinDesCHS0>function--distance measuring</PinDesCHS0>
+      <PinDesCHT0>function--distance measuring</PinDesCHT0>
+      <HardwareInstance />
+    </_IRDISTANCE_>
+    <_IRDETECT_>
+      <TypeNickNameDefault>IRDetect</TypeNickNameDefault>
+      <TypeNickNameCHS>IRDetect</TypeNickNameCHS>
+      <TypeNickNameCHT>IRDetect</TypeNickNameCHT>
+      <TypeDesDefault>IR detect</TypeDesDefault>
+      <TypeDesCHS>IR detect</TypeDesCHS>
+      <TypeDesCHT>IR detect</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--IR detect</PinDesDefault0>
+      <PinDesCHS0>function--IR detect</PinDesCHS0>
+      <PinDesCHT0>function--IR detect</PinDesCHT0>
+      <HardwareInstance />
+    </_IRDETECT_>
+    <_LED_>
+      <TypeNickNameDefault>LED</TypeNickNameDefault>
+      <TypeNickNameCHS>LED</TypeNickNameCHS>
+      <TypeNickNameCHT>LED</TypeNickNameCHT>
+      <TypeDesDefault>LED Lighting</TypeDesDefault>
+      <TypeDesCHS>LED Lighting</TypeDesCHS>
+      <TypeDesCHT>LED Lighting</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--light control</PinDesDefault0>
+      <PinDesCHS0>function--light control</PinDesCHS0>
+      <PinDesCHT0>function--light control</PinDesCHT0>
+      <HardwareInstance />
+    </_LED_>
+    <_SWITCH_>
+      <TypeNickNameDefault>Electronic Switches</TypeNickNameDefault>
+      <TypeNickNameCHS>Electronic Switches</TypeNickNameCHS>
+      <TypeNickNameCHT>Electronic Switches</TypeNickNameCHT>
+      <TypeDesDefault>SWITCH</TypeDesDefault>
+      <TypeDesCHS>SWITCH</TypeDesCHS>
+      <TypeDesCHT>SWITCH</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit />
+      <VccLimit />
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--Switch control</PinDesDefault0>
+      <PinDesCHS0>function--Switch control</PinDesCHS0>
+      <PinDesCHT0>function--Switch control</PinDesCHT0>
+      <HardwareInstance />
+    </_SWITCH_>
+    <_IRAUTO_>
+      <TypeNickNameDefault>IRSend</TypeNickNameDefault>
+      <TypeNickNameCHS>IRSend</TypeNickNameCHS>
+      <TypeNickNameCHT>IRSend</TypeNickNameCHT>
+      <TypeDesDefault>Auto Send IR</TypeDesDefault>
+      <TypeDesCHS>Auto Send IR</TypeDesCHS>
+      <TypeDesCHT>Auto Send IR</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--send control</PinDesDefault0>
+      <PinDesCHS0>function--send control</PinDesCHS0>
+      <PinDesCHT0>function--send control</PinDesCHT0>
+      <HardwareInstance />
+    </_IRAUTO_>
+    <_MOTOR_>
+      <TypeNickNameDefault>Motor</TypeNickNameDefault>
+      <TypeNickNameCHS>Motor</TypeNickNameCHS>
+      <TypeNickNameCHT>Motor</TypeNickNameCHT>
+      <TypeDesDefault>MOTOR</TypeDesDefault>
+      <TypeDesCHS>MOTOR</TypeDesCHS>
+      <TypeDesCHT>MOTOR</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit />
+      <VccLimit />
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--motor control line1</PinDesDefault0>
+      <PinDesCHS0>function--motor control line1</PinDesCHS0>
+      <PinDesCHT0>function--motor control line1</PinDesCHT0>
+      <PinDesDefault1>function--motor control lin2</PinDesDefault1>
+      <PinDesCHS1>function--motor control lin2</PinDesCHS1>
+      <PinDesCHT1>function--motor control lin2</PinDesCHT1>
+      <HardwareInstance>
+        <_MOTOR_NW_>
+          <TypeName>_MOTOR_</TypeName>
+          <TypeNum>0</TypeNum>
+          <CtrlPin>9 ,8 </CtrlPin>
+          <GNDPin>9 </GNDPin>
+          <VccPin>9 </VccPin>
+        </_MOTOR_NW_>
+        <_MOTOR_SW_>
+          <TypeName>_MOTOR_</TypeName>
+          <TypeNum>0</TypeNum>
+          <CtrlPin>11 ,10 </CtrlPin>
+          <GNDPin>11 </GNDPin>
+          <VccPin>11 </VccPin>
+        </_MOTOR_SW_>
+        <_MOTOR_NE_>
+          <TypeName>_MOTOR_</TypeName>
+          <TypeNum>0</TypeNum>
+          <CtrlPin>20 ,21 </CtrlPin>
+          <GNDPin>20 </GNDPin>
+          <VccPin>20 </VccPin>
+        </_MOTOR_NE_>
+        <_MOTOR_SE_>
+          <TypeName>_MOTOR_</TypeName>
+          <TypeNum>0</TypeNum>
+          <CtrlPin>22 ,23 </CtrlPin>
+          <GNDPin>22 </GNDPin>
+          <VccPin>22 </VccPin>
+        </_MOTOR_SE_>
+      </HardwareInstance>
+    </_MOTOR_>
+    <_PHOTOSENSOR_>
+      <TypeNickNameDefault>PhotoSensor</TypeNickNameDefault>
+      <TypeNickNameCHS>PhotoSensor</TypeNickNameCHS>
+      <TypeNickNameCHT>PhotoSensor</TypeNickNameCHT>
+      <TypeDesDefault>ambient light measuring</TypeDesDefault>
+      <TypeDesCHS>ambient light measuring</TypeDesCHS>
+      <TypeDesCHT>ambient light measuring</TypeDesCHT>
+      <CtrlLimit>0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,20 ,21 ,22 ,23 </CtrlLimit>
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--light measuringt</PinDesDefault0>
+      <PinDesCHS0>function--light measuringt</PinDesCHS0>
+      <PinDesCHT0>function--light measuringt</PinDesCHT0>
+      <HardwareInstance />
+    </_PHOTOSENSOR_>
+    <_FLAMEDETECT_>
+      <TypeNickNameDefault>FlameDetect</TypeNickNameDefault>
+      <TypeNickNameCHS>FlameDetect</TypeNickNameCHS>
+      <TypeNickNameCHT>FlameDetect</TypeNickNameCHT>
+      <TypeDesDefault>flame detector</TypeDesDefault>
+      <TypeDesCHS>flame detector</TypeDesCHS>
+      <TypeDesCHT>flame detector</TypeDesCHT>
+      <CtrlLimit>0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,20 ,21 ,22 ,23 </CtrlLimit>
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--flame detect</PinDesDefault0>
+      <PinDesCHS0>function--flame detect</PinDesCHS0>
+      <PinDesCHT0>function--flame detect</PinDesCHT0>
+      <HardwareInstance />
+    </_FLAMEDETECT_>
+    <_SCABLEAD_>
+      <TypeNickNameDefault>Gray Scale Sensor</TypeNickNameDefault>
+      <TypeNickNameCHS>Gray Scale Sensor</TypeNickNameCHS>
+      <TypeNickNameCHT>Gray Scale Sensor</TypeNickNameCHT>
+      <TypeDesDefault>gray value measuring</TypeDesDefault>
+      <TypeDesCHS>gray value measuring</TypeDesCHS>
+      <TypeDesCHT>gray value measuring</TypeDesCHT>
+      <CtrlLimit>0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,20 ,21 ,22 ,23 </CtrlLimit>
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--measuring gray value</PinDesDefault0>
+      <PinDesCHS0>function--measuring gray value</PinDesCHS0>
+      <PinDesCHT0>function--measuring gray value</PinDesCHT0>
+      <HardwareInstance>
+        <_SCABLEAD_X_>
+          <TypeName>_SCABLEAD_</TypeName>
+          <TypeNum>0</TypeNum>
+          <CtrlPin>12 </CtrlPin>
+          <GNDPin>12 </GNDPin>
+          <VccPin>12 </VccPin>
+        </_SCABLEAD_X_>
+        <_SCABLEAD_Z_>
+          <TypeName>_SCABLEAD_</TypeName>
+          <TypeNum>0</TypeNum>
+          <CtrlPin>13 </CtrlPin>
+          <GNDPin>13 </GNDPin>
+          <VccPin>13 </VccPin>
+        </_SCABLEAD_Z_>
+        <_SCABLEAD_Y_>
+          <TypeName>_SCABLEAD_</TypeName>
+          <TypeNum>0</TypeNum>
+          <CtrlPin>14 </CtrlPin>
+          <GNDPin>14 </GNDPin>
+          <VccPin>14 </VccPin>
+        </_SCABLEAD_Y_>
+      </HardwareInstance>
+    </_SCABLEAD_>
+    <_SCABLEAD3C_>
+      <TypeNickNameDefault>3 Color Gray Scale Sensor</TypeNickNameDefault>
+      <TypeNickNameCHS>3 Color Gray Scale Sensor</TypeNickNameCHS>
+      <TypeNickNameCHT>3 Color Gray Scale Sensor</TypeNickNameCHT>
+      <TypeDesDefault>gray value measuring</TypeDesDefault>
+      <TypeDesCHS>gray value measuring</TypeDesCHS>
+      <TypeDesCHT>gray value measuring</TypeDesCHT>
+      <CtrlLimit>0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,20 ,21 ,22 ,23 </CtrlLimit>
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--measuring gray value</PinDesDefault0>
+      <PinDesCHS0>function--measuring gray value</PinDesCHS0>
+      <PinDesCHT0>function--measuring gray value</PinDesCHT0>
+      <PinDesDefault1>function--led control</PinDesDefault1>
+      <PinDesCHS1>function--led control</PinDesCHS1>
+      <PinDesCHT1>function--led control</PinDesCHT1>
+      <HardwareInstance />
+    </_SCABLEAD3C_>
+    <_SELECTOR_>
+      <TypeNickNameDefault>Selector</TypeNickNameDefault>
+      <TypeNickNameCHS>Selector</TypeNickNameCHS>
+      <TypeNickNameCHT>Selector</TypeNickNameCHT>
+      <TypeDesDefault>Selector</TypeDesDefault>
+      <TypeDesCHS>Selector</TypeDesCHS>
+      <TypeDesCHT>Selector</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit />
+      <VccLimit />
+      <IsDefault>true</IsDefault>
+      <PinCount>4</PinCount>
+      <PinDesDefault0>function--selector detect line1</PinDesDefault0>
+      <PinDesCHS0>function--selector detect line1</PinDesCHS0>
+      <PinDesCHT0>function--selector detect line1</PinDesCHT0>
+      <PinDesDefault1>function--selector detect line2</PinDesDefault1>
+      <PinDesCHS1>function--selector detect line2</PinDesCHS1>
+      <PinDesCHT1>function--selector detect line2</PinDesCHT1>
+      <PinDesDefault2>function--selector detect line3</PinDesDefault2>
+      <PinDesCHS2>function--selector detect line3</PinDesCHS2>
+      <PinDesCHT2>function--selector detect line3</PinDesCHT2>
+      <PinDesDefault3>function--selector detect line4</PinDesDefault3>
+      <PinDesCHS3>function--selector detect line4</PinDesCHS3>
+      <PinDesCHT3>function--selector detect line4</PinDesCHT3>
+      <HardwareInstance />
+    </_SELECTOR_>
+    <_SERVO_>
+      <TypeNickNameDefault>Servo</TypeNickNameDefault>
+      <TypeNickNameCHS>Servo</TypeNickNameCHS>
+      <TypeNickNameCHT>Servo</TypeNickNameCHT>
+      <TypeDesDefault>Servo</TypeDesDefault>
+      <TypeDesCHS>Servo</TypeDesCHS>
+      <TypeDesCHT>Servo</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--servo motor control</PinDesDefault0>
+      <PinDesCHS0>function--servo motor control</PinDesCHS0>
+      <PinDesCHT0>function--servo motor control</PinDesCHT0>
+      <HardwareInstance />
+    </_SERVO_>
+    <_TOUCH_>
+      <TypeNickNameDefault>Touch</TypeNickNameDefault>
+      <TypeNickNameCHS>Touch</TypeNickNameCHS>
+      <TypeNickNameCHT>Touch</TypeNickNameCHT>
+      <TypeDesDefault>Touch detect</TypeDesDefault>
+      <TypeDesCHS>Touch detect</TypeDesCHS>
+      <TypeDesCHT>Touch detect</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--touch detect</PinDesDefault0>
+      <PinDesCHS0>function--touch detect</PinDesCHS0>
+      <PinDesCHT0>function--touch detect</PinDesCHT0>
+      <HardwareInstance>
+        <_TOUCH_T_>
+          <TypeName>_TOUCH_</TypeName>
+          <TypeNum>0</TypeNum>
+          <CtrlPin>17 </CtrlPin>
+          <GNDPin>17 </GNDPin>
+          <VccPin>17 </VccPin>
+        </_TOUCH_T_>
+      </HardwareInstance>
+    </_TOUCH_>
+    <_MICROPHONE_>
+      <TypeNickNameDefault>Microphone</TypeNickNameDefault>
+      <TypeNickNameCHS>Microphone</TypeNickNameCHS>
+      <TypeNickNameCHT>Microphone</TypeNickNameCHT>
+      <TypeDesDefault>Volume measuring</TypeDesDefault>
+      <TypeDesCHS>Volume measuring</TypeDesCHS>
+      <TypeDesCHT>Volume measuring</TypeDesCHT>
+      <CtrlLimit>0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,20 ,21 ,22 ,23 </CtrlLimit>
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--volume measuring</PinDesDefault0>
+      <PinDesCHS0>function--volume measuring</PinDesCHS0>
+      <PinDesCHT0>function--volume measuring</PinDesCHT0>
+      <HardwareInstance />
+    </_MICROPHONE_>
+    <_TEMPERATURE_>
+      <TypeNickNameDefault>Temperature</TypeNickNameDefault>
+      <TypeNickNameCHS>Temperature</TypeNickNameCHS>
+      <TypeNickNameCHT>Temperature</TypeNickNameCHT>
+      <TypeDesDefault>temperature measuring</TypeDesDefault>
+      <TypeDesCHS>temperature measuring</TypeDesCHS>
+      <TypeDesCHT>temperature measuring</TypeDesCHT>
+      <CtrlLimit>0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,20 ,21 ,22 ,23 </CtrlLimit>
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--temperature measuring</PinDesDefault0>
+      <PinDesCHS0>function--temperature measuring</PinDesCHS0>
+      <PinDesCHT0>function--temperature measuring</PinDesCHT0>
+      <HardwareInstance />
+    </_TEMPERATURE_>
+    <_COMPASS_>
+      <TypeNickNameDefault>AngleGauge</TypeNickNameDefault>
+      <TypeNickNameCHS>AngleGauge</TypeNickNameCHS>
+      <TypeNickNameCHT>AngleGauge</TypeNickNameCHT>
+      <TypeDesDefault>Angle gauging</TypeDesDefault>
+      <TypeDesCHS>Angle gauging</TypeDesCHS>
+      <TypeDesCHT>Angle gauging</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance>
+        <_COMPASS_C_>
+          <TypeName>_COMPASS_</TypeName>
+          <TypeNum>0</TypeNum>
+          <CtrlPin>6 ,7 </CtrlPin>
+          <GNDPin>6 </GNDPin>
+          <VccPin>6 </VccPin>
+        </_COMPASS_C_>
+      </HardwareInstance>
+    </_COMPASS_>
+    <_SERVOCTRL_>
+      <TypeNickNameDefault>ServoCtrlUnit</TypeNickNameDefault>
+      <TypeNickNameCHS>ServoCtrlUnit</TypeNickNameCHS>
+      <TypeNickNameCHT>ServoCtrlUnit</TypeNickNameCHT>
+      <TypeDesDefault>servo control board</TypeDesDefault>
+      <TypeDesCHS>servo control board</TypeDesCHS>
+      <TypeDesCHT>servo control board</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_SERVOCTRL_>
+    <_COMPOUNDEYE_>
+      <TypeNickNameDefault>CompoundEye</TypeNickNameDefault>
+      <TypeNickNameCHS>CompoundEye</TypeNickNameCHS>
+      <TypeNickNameCHT>CompoundEye</TypeNickNameCHT>
+      <TypeDesDefault>Multi flame value measuring</TypeDesDefault>
+      <TypeDesCHS>Multi flame value measuring</TypeDesCHS>
+      <TypeDesCHT>Multi flame value measuring</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_COMPOUNDEYE_>
+    <_ULTRASOUND_>
+      <TypeNickNameDefault>distance measure module</TypeNickNameDefault>
+      <TypeNickNameCHS>distance measure module</TypeNickNameCHS>
+      <TypeNickNameCHT>distance measure module</TypeNickNameCHT>
+      <TypeDesDefault>distance measure</TypeDesDefault>
+      <TypeDesCHS>distance measure</TypeDesCHS>
+      <TypeDesCHT>distance measure</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_ULTRASOUND_>
+    <_WIRELESS_>
+      <TypeNickNameDefault>wireless receive and send module</TypeNickNameDefault>
+      <TypeNickNameCHS>wireless receive and send module</TypeNickNameCHS>
+      <TypeNickNameCHT>wireless receive and send module</TypeNickNameCHT>
+      <TypeDesDefault>wireless receve and send data</TypeDesDefault>
+      <TypeDesCHS>wireless receve and send data</TypeDesCHS>
+      <TypeDesCHT>wireless receve and send data</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_WIRELESS_>
+    <_PS2_>
+      <TypeNickNameDefault>ps2 rocker</TypeNickNameDefault>
+      <TypeNickNameCHS>ps2 rocker</TypeNickNameCHS>
+      <TypeNickNameCHT>ps2 rocker</TypeNickNameCHT>
+      <TypeDesDefault>ps2 rocker</TypeDesDefault>
+      <TypeDesCHS>ps2 rocker</TypeDesCHS>
+      <TypeDesCHT>ps2 rocker</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_PS2_>
+    <_ADEXTEND_>
+      <TypeNickNameDefault>AD Extend Module</TypeNickNameDefault>
+      <TypeNickNameCHS>AD Extend Module</TypeNickNameCHS>
+      <TypeNickNameCHT>AD Extend Module</TypeNickNameCHT>
+      <TypeDesDefault>Analog measuring</TypeDesDefault>
+      <TypeDesCHS>Analog measuring</TypeDesCHS>
+      <TypeDesCHT>Analog measuring</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_ADEXTEND_>
+    <_CALENDAR_>
+      <TypeNickNameDefault>Clock and Calendar Module</TypeNickNameDefault>
+      <TypeNickNameCHS>Clock and Calendar Module</TypeNickNameCHS>
+      <TypeNickNameCHT>Clock and Calendar Module</TypeNickNameCHT>
+      <TypeDesDefault>Read or Write the Clock and Calendar</TypeDesDefault>
+      <TypeDesCHS>Read or Write the Clock and Calendar</TypeDesCHS>
+      <TypeDesCHT>Read or Write the Clock and Calendar</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_CALENDAR_>
+    <_RFID_>
+      <TypeNickNameDefault>RFID</TypeNickNameDefault>
+      <TypeNickNameCHS>RFID</TypeNickNameCHS>
+      <TypeNickNameCHT>RFID</TypeNickNameCHT>
+      <TypeDesDefault>Ic card reader</TypeDesDefault>
+      <TypeDesCHS>Ic card reader</TypeDesCHS>
+      <TypeDesCHT>Ic card reader</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_RFID_>
+    <_MP3_>
+      <TypeNickNameDefault>MP3</TypeNickNameDefault>
+      <TypeNickNameCHS>MP3</TypeNickNameCHS>
+      <TypeNickNameCHT>MP3</TypeNickNameCHT>
+      <TypeDesDefault>MP3 music players</TypeDesDefault>
+      <TypeDesCHS>MP3 music players</TypeDesCHS>
+      <TypeDesCHT>MP3 music players</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_MP3_>
+    <_PYIFRARED_>
+      <TypeNickNameDefault>pyroelectric infrared Sensor</TypeNickNameDefault>
+      <TypeNickNameCHS>pyroelectric infrared Sensor</TypeNickNameCHS>
+      <TypeNickNameCHT>pyroelectric infrared Sensor</TypeNickNameCHT>
+      <TypeDesDefault>pyroelectric infrared value measuring</TypeDesDefault>
+      <TypeDesCHS>pyroelectric infrared value measuring</TypeDesCHS>
+      <TypeDesCHT>pyroelectric infrared value measuring</TypeDesCHT>
+      <CtrlLimit>0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,20 ,21 ,22 ,23 </CtrlLimit>
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--measuring pyroelectric infrared value</PinDesDefault0>
+      <PinDesCHS0>function--measuring pyroelectric infrared value</PinDesCHS0>
+      <PinDesCHT0>function--measuring pyroelectric infrared value</PinDesCHT0>
+      <HardwareInstance />
+    </_PYIFRARED_>
+    <_HUMIDITY_>
+      <TypeNickNameDefault>Humidity Sensor</TypeNickNameDefault>
+      <TypeNickNameCHS>Humidity Sensor</TypeNickNameCHS>
+      <TypeNickNameCHT>Humidity Sensor</TypeNickNameCHT>
+      <TypeDesDefault>Humidity value measuring</TypeDesDefault>
+      <TypeDesCHS>Humidity value measuring</TypeDesCHS>
+      <TypeDesCHT>Humidity value measuring</TypeDesCHT>
+      <CtrlLimit>0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,20 ,21 ,22 ,23 </CtrlLimit>
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--measuring humidity value</PinDesDefault0>
+      <PinDesCHS0>function--measuring humidity value</PinDesCHS0>
+      <PinDesCHT0>function--measuring humidity value</PinDesCHT0>
+      <HardwareInstance />
+    </_HUMIDITY_>
+    <_SLOPE_>
+      <TypeNickNameDefault>Slope</TypeNickNameDefault>
+      <TypeNickNameCHS>Slope</TypeNickNameCHS>
+      <TypeNickNameCHT>Slope</TypeNickNameCHT>
+      <TypeDesDefault>Slope</TypeDesDefault>
+      <TypeDesCHS>Slope</TypeDesCHS>
+      <TypeDesCHT>Slope</TypeDesCHT>
+      <CtrlLimit>0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,20 ,21 ,22 ,23 </CtrlLimit>
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--selector detect line1</PinDesDefault0>
+      <PinDesCHS0>function--selector detect line1</PinDesCHS0>
+      <PinDesCHT0>function--selector detect line1</PinDesCHT0>
+      <PinDesDefault1>function--selector detect line2</PinDesDefault1>
+      <PinDesCHS1>function--selector detect line2</PinDesCHS1>
+      <PinDesCHT1>function--selector detect line2</PinDesCHT1>
+      <HardwareInstance />
+    </_SLOPE_>
+    <_ACCELERATION_>
+      <TypeNickNameDefault>ACCELERATION</TypeNickNameDefault>
+      <TypeNickNameCHS>ACCELERATION</TypeNickNameCHS>
+      <TypeNickNameCHT>ACCELERATION</TypeNickNameCHT>
+      <TypeDesDefault>Acceleration sensor</TypeDesDefault>
+      <TypeDesCHS>Acceleration sensor</TypeDesCHS>
+      <TypeDesCHT>Acceleration sensor</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_ACCELERATION_>
+    <_TRACE_>
+      <TypeNickNameDefault>Trace</TypeNickNameDefault>
+      <TypeNickNameCHS>Trace</TypeNickNameCHS>
+      <TypeNickNameCHT>Trace</TypeNickNameCHT>
+      <TypeDesDefault>Intelligent tracing module</TypeDesDefault>
+      <TypeDesCHS>Intelligent tracing module</TypeDesCHS>
+      <TypeDesCHT>Intelligent tracing module</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_TRACE_>
+    <_COMPOUNDEYE2_>
+      <TypeNickNameDefault>DBCompoundEye</TypeNickNameDefault>
+      <TypeNickNameCHS>DBCompoundEye</TypeNickNameCHS>
+      <TypeNickNameCHT>DBCompoundEye</TypeNickNameCHT>
+      <TypeDesDefault>Multi flame value measuring</TypeDesDefault>
+      <TypeDesCHS>Multi flame value measuring</TypeDesCHS>
+      <TypeDesCHT>Multi flame value measuring</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_COMPOUNDEYE2_>
+    <_COMPOUNDEYE3_>
+      <TypeNickNameDefault>DBCompoundEye</TypeNickNameDefault>
+      <TypeNickNameCHS>DBCompoundEye</TypeNickNameCHS>
+      <TypeNickNameCHT>DBCompoundEye</TypeNickNameCHT>
+      <TypeDesDefault>Multi flame value measuring</TypeDesDefault>
+      <TypeDesCHS>Multi flame value measuring</TypeDesCHS>
+      <TypeDesCHT>Multi flame value measuring</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance>
+        <_COMPOUNDEYE3_F_>
+          <TypeName>_COMPOUNDEYE3_</TypeName>
+          <TypeNum>0</TypeNum>
+          <CtrlPin>0 ,1 </CtrlPin>
+          <GNDPin>0 </GNDPin>
+          <VccPin>0 </VccPin>
+        </_COMPOUNDEYE3_F_>
+        <_COMPOUNDEYE3_B_>
+          <TypeName>_COMPOUNDEYE3_</TypeName>
+          <TypeNum>0</TypeNum>
+          <CtrlPin>2 ,3 </CtrlPin>
+          <GNDPin>2 </GNDPin>
+          <VccPin>2 </VccPin>
+        </_COMPOUNDEYE3_B_>
+      </HardwareInstance>
+    </_COMPOUNDEYE3_>
+    <_COMPOUNDEYE16_>
+      <TypeNickNameDefault>CompoundEye16</TypeNickNameDefault>
+      <TypeNickNameCHS>CompoundEye16</TypeNickNameCHS>
+      <TypeNickNameCHT>CompoundEye16</TypeNickNameCHT>
+      <TypeDesDefault>Multi flame value measuring</TypeDesDefault>
+      <TypeDesCHS>Multi flame value measuring</TypeDesCHS>
+      <TypeDesCHT>Multi flame value measuring</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_COMPOUNDEYE16_>
+    <_KICK_>
+      <TypeNickNameDefault>KICK</TypeNickNameDefault>
+      <TypeNickNameCHS>KICK</TypeNickNameCHS>
+      <TypeNickNameCHT>KICK</TypeNickNameCHT>
+      <TypeDesDefault>KICK</TypeDesDefault>
+      <TypeDesCHS>KICK</TypeDesCHS>
+      <TypeDesCHT>KICK</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--data line</PinDesDefault1>
+      <PinDesCHS1>function--data line</PinDesCHS1>
+      <PinDesCHT1>function--data line</PinDesCHT1>
+      <HardwareInstance />
+    </_KICK_>
+    <_MICROTRACE_>
+      <TypeNickNameDefault>MicroTrace</TypeNickNameDefault>
+      <TypeNickNameCHS>MicroTrace</TypeNickNameCHS>
+      <TypeNickNameCHT>MicroTrace</TypeNickNameCHT>
+      <TypeDesDefault>Intelligent tracing module</TypeDesDefault>
+      <TypeDesCHS>Intelligent tracing module</TypeDesCHS>
+      <TypeDesCHT>Intelligent tracing module</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_MICROTRACE_>
+    <_ADEXTEND14_>
+      <TypeNickNameDefault>14AD Extend Module</TypeNickNameDefault>
+      <TypeNickNameCHS>14AD Extend Module</TypeNickNameCHS>
+      <TypeNickNameCHT>14AD Extend Module</TypeNickNameCHT>
+      <TypeDesDefault>Analog measuring</TypeDesDefault>
+      <TypeDesCHS>Analog measuring</TypeDesCHS>
+      <TypeDesCHT>Analog measuring</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_ADEXTEND14_>
+    <_SMOKE_>
+      <TypeNickNameDefault>Smoke</TypeNickNameDefault>
+      <TypeNickNameCHS>Smoke</TypeNickNameCHS>
+      <TypeNickNameCHT>Smoke</TypeNickNameCHT>
+      <TypeDesDefault>measuring smoke intensity</TypeDesDefault>
+      <TypeDesCHS>measuring smoke intensity</TypeDesCHS>
+      <TypeDesCHT>measuring smoke intensity</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--distance measuring</PinDesDefault0>
+      <PinDesCHS0>function--distance measuring</PinDesCHS0>
+      <PinDesCHT0>function--distance measuring</PinDesCHT0>
+      <HardwareInstance />
+    </_SMOKE_>
+    <_DOOR_>
+      <TypeNickNameDefault>Door</TypeNickNameDefault>
+      <TypeNickNameCHS>Door</TypeNickNameCHS>
+      <TypeNickNameCHT>Door</TypeNickNameCHT>
+      <TypeDesDefault>photoelectronic switch</TypeDesDefault>
+      <TypeDesCHS>photoelectronic switch</TypeDesCHS>
+      <TypeDesCHT>photoelectronic switch</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--IR detect</PinDesDefault0>
+      <PinDesCHS0>function--IR detect</PinDesCHS0>
+      <PinDesCHT0>function--IR detect</PinDesCHT0>
+      <HardwareInstance />
+    </_DOOR_>
+    <_CLOSE_>
+      <TypeNickNameDefault>Close</TypeNickNameDefault>
+      <TypeNickNameCHS>Close</TypeNickNameCHS>
+      <TypeNickNameCHT>Close</TypeNickNameCHT>
+      <TypeDesDefault>IR detect</TypeDesDefault>
+      <TypeDesCHS>IR detect</TypeDesCHS>
+      <TypeDesCHT>IR detect</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--IR detect</PinDesDefault0>
+      <PinDesCHS0>function--IR detect</PinDesCHS0>
+      <PinDesCHT0>function--IR detect</PinDesCHT0>
+      <HardwareInstance />
+    </_CLOSE_>
+    <_DIGITALTEMPERATURE_>
+      <TypeNickNameDefault>Temperature</TypeNickNameDefault>
+      <TypeNickNameCHS>Temperature</TypeNickNameCHS>
+      <TypeNickNameCHT>Temperature</TypeNickNameCHT>
+      <TypeDesDefault>temperature measuring</TypeDesDefault>
+      <TypeDesCHS>temperature measuring</TypeDesCHS>
+      <TypeDesCHT>temperature measuring</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--temperature measuring</PinDesDefault0>
+      <PinDesCHS0>function--temperature measuring</PinDesCHS0>
+      <PinDesCHT0>function--temperature measuring</PinDesCHT0>
+      <HardwareInstance />
+    </_DIGITALTEMPERATURE_>
+    <_IRONE_>
+      <TypeNickNameDefault>IRone</TypeNickNameDefault>
+      <TypeNickNameCHS>IRone</TypeNickNameCHS>
+      <TypeNickNameCHT>IRone</TypeNickNameCHT>
+      <TypeDesDefault>IR detect</TypeDesDefault>
+      <TypeDesCHS>IR detect</TypeDesCHS>
+      <TypeDesCHT>IR detect</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--IR detect</PinDesDefault0>
+      <PinDesCHS0>function--IR detect</PinDesCHS0>
+      <PinDesCHT0>function--IR detect</PinDesCHT0>
+      <HardwareInstance />
+    </_IRONE_>
+    <_MUSICPLAYER_>
+      <TypeNickNameDefault>MusicPlayer</TypeNickNameDefault>
+      <TypeNickNameCHS>MusicPlayer</TypeNickNameCHS>
+      <TypeNickNameCHT>MusicPlayer</TypeNickNameCHT>
+      <TypeDesDefault>measuring distance using IR</TypeDesDefault>
+      <TypeDesCHS>measuring distance using IR</TypeDesCHS>
+      <TypeDesCHT>measuring distance using IR</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>1</PinCount>
+      <PinDesDefault0>function--distance measuring</PinDesDefault0>
+      <PinDesCHS0>function--distance measuring</PinDesCHS0>
+      <PinDesCHT0>function--distance measuring</PinDesCHT0>
+      <HardwareInstance />
+    </_MUSICPLAYER_>
+    <_TRACEV2_>
+      <TypeNickNameDefault>Trace</TypeNickNameDefault>
+      <TypeNickNameCHS>Trace</TypeNickNameCHS>
+      <TypeNickNameCHT>Trace</TypeNickNameCHT>
+      <TypeDesDefault>Intelligent tracing module</TypeDesDefault>
+      <TypeDesCHS>Intelligent tracing module</TypeDesCHS>
+      <TypeDesCHT>Intelligent tracing module</TypeDesCHT>
+      <CtrlLimit />
+      <GNDLimit>20 ,21 ,22 ,23 </GNDLimit>
+      <VccLimit>20 ,21 ,22 ,23 </VccLimit>
+      <IsDefault>true</IsDefault>
+      <PinCount>2</PinCount>
+      <PinDesDefault0>function--data line</PinDesDefault0>
+      <PinDesCHS0>function--data line</PinDesCHS0>
+      <PinDesCHT0>function--data line</PinDesCHT0>
+      <PinDesDefault1>function--clock line</PinDesDefault1>
+      <PinDesCHS1>function--clock line</PinDesCHS1>
+      <PinDesCHT1>function--clock line</PinDesCHT1>
+      <HardwareInstance />
+    </_TRACEV2_>
+  </HardwareType>
+</HardwareTable>
